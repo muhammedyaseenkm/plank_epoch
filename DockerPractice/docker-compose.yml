@@ -1,0 +1,7 @@
+version: '3'
+services:
+  app:
+    build: .
+    volumes:
+      - ./example-docs:/app/example-docs
+    command: main.py

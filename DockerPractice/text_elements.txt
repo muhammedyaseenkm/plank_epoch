@@ -1,0 +1,2 @@
+[<unstructured.documents.elements.NarrativeText object at 0x7fa2bd18ddb0>, <unstructured.documents.elements.Address object at 0x7fa2bd18db70>, <unstructured.documents.elements.Title object at 0x7fa2bd18dba0>, <unstructured.documents.elements.ListItem object at 0x7fa2bd18d780>, <unstructured.documents.elements.ListItem object at 0x7fa2bd18d5a0>, <unstructured.documents.elements.ListItem object at 0x7fa2bd18d540>]
+^C

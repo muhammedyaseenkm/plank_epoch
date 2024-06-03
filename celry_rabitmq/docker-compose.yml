@@ -1,0 +1,28 @@
+version: '3'
+services:
+  rabbitmq:
+    image: rabbitmq:management
+    ports:
+      - "5672:5672" # RabbitMQ
+      - "15672:15672" # RabbitMQ Management UI
+    networks:
+      - backend
+
+  redis:
+    image: redis:latest
+    
+    ports:
+      - "6379:6379" # Redis
+    networks:
+      - backend
+
+  celery_worker:
+    build: .
+    depends_on:
+      - rabbitmq
+      - redis
+    networks:
+      - backend
+
+networks:
+  backend:

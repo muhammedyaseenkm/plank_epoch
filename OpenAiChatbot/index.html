@@ -1,0 +1,40 @@
+<!-- To Run the code 
+     npm install -g http-server    
+>> http-server 
+-->>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="chatbot-container" class="chat-container">
+        <div id="chatbot-conversation" class="conversation-container">
+            <!-- Chat messages will be dynamically added here -->
+        </div>
+        <div id="controls">
+            <button id="prev-page">Previous Page</button>
+            <button id="next-page">Next Page</button>
+            <input type="text" id="search-input" placeholder="Search...">
+            <button id="search-btn">Search</button>
+            <button id="clear-chat-btn">Clear Chat</button>
+            <button id="export-chat-btn">Export Chat</button>
+            <button id="refresh-btn">Refresh Chat</button>
+
+        </div>
+        <form id="form" class="chatbot-input-container">
+            <input name="user-input" type="text" id="user-input" required class="user-input" placeholder="Type a message...">
+            <button type="submit" id="submit-btn" class="submit-btn">
+                <img src="images/send-btn-icon.png" class="send-btn-icon" alt="Send">
+            </button>
+        </form>
+        <button id="export-btn">Export Chat</button>
+    </div>
+
+   <script src="script.js" type="module"></script> 
+</body>
+</html>

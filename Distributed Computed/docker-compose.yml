@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  fastapi:
+    build: .
+    ports:
+      - "8000:8000"  # Adjust port if needed
+    depends_on:
+      - redis
+
+  redis:
+    image: "redis:latest"
+    ports:
+      - "6379:6379"  # Adjust port if needed

@@ -1,0 +1,13 @@
+langchain 
+unstructured[all-docs] 
+pydantic 
+lxml 
+openai 
+chromadb 
+tiktoken
+
+# !apt-get install poppler-utils -y
+# !pdfinfo --version
+
+# !apt-get install tesseract-ocr
+

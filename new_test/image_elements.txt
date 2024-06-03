@@ -1,0 +1,5 @@
+eng,swe is not a valid standard language code.
+eng,swe is not a language supported by Tesseract.
+Failed to find any valid standard language code from languages: ['eng,swe'], proceed with `eng` instead.
+This function will be deprecated in a future release and `unstructured` will simply use the DEFAULT_MODEL from `unstructured_inference.model.base` to set default model name
+[<unstructured.documents.elements.Header object at 0x7fbabff7e230>, <unstructured.documents.elements.Text object at 0x7fbabff7ffa0>, <unstructured.documents.elements.Title object at 0x7fbabff7cdc0>, <unstructured.documents.elements.NarrativeText object at 0x7fbabff7e0e0>, <unstructured.documents.elements.NarrativeText object at 0x7fbabff7f250>, <unstructured.documents.elements.NarrativeText object at 0x7fbabff7e560>, <unstructured.documents.elements.NarrativeText object at 0x7fbabff7d2a0>, <unstructured.documents.elements.Title object at 0x7fbabff7e650>, <unstructured.documents.elements.NarrativeText object at 0x7fbabff7e770>]

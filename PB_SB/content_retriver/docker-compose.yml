@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  my-service:
+    image: my-python-image
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./path:/app  # Mounting your local directory containing scripts
+    command: python my_script.py  # Command to run your application
+    environment:
+      - ENV_VAR=value  # Set environment variables if needed
+    ports:
+      - "8080:8080"  # Expose ports if needed
+
+networks:
+  my-network:
+    driver: bridge
+
+volumes:
+  my-volume:

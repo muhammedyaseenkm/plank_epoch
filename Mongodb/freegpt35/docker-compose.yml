@@ -1,0 +1,19 @@
+services:
+  freegpt35:
+    image: hominsu/freegpt35:latest
+    container_name: freegpt35
+    restart: always
+    environment:
+      TZ: 'Asia/Shanghai'
+      # NEXT_API_KEY: "your key"
+      # NEXT_PROXY: "http://127.0.0.1:7890"
+    ports:
+      - '3000:3000'
+    networks:
+      net:
+        aliases:
+          - freegpt35
+
+networks:
+  net:
+    driver: bridge

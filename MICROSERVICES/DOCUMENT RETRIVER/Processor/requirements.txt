@@ -1,0 +1,3 @@
+# uvicorn service_b:app --reload
+
+pdfplumber == 0.11.0
